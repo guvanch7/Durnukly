@@ -41,19 +41,21 @@ const isBeriji = () => {
 
                     <MDBCol md="6">
                         <div className="pic-with-items__content--item number-view mb-4  bg-white p-3 insCard">
-
-                            <h2 className="mt-2 text-black fw-bolder">{t("workInsHead")}</h2>
-                            <p>{t("workInsPar1")}</p>
+                        <h2 className="mt-2 text-black fw-bolder text-center">{t("workInsSpan")}</h2>
+                            <p className='mt-3'>
+                            {t("workInsTxt")}
+                            </p>
+                            
                         </div>
 
                     </MDBCol>
                     <MDBCol lg={12} className='mt-5'>
                         <div className="pic-with-items__content--item number-view  text-black insCard bg-white p-3">
 
-                            <h2 className="mt-2 text-black fw-bolder text-center"><span className='descr'>{t("workInsSpan")}</span></h2>
-                            <p className='mt-3'>
-                            {t("workInsTxt")}
-                            </p>
+                           
+
+                            <h2 className="mt-2 text-black text-center fw-bolder"> <span className='descr'>{t("workInsHead")}</span></h2>
+                            <p>{t("workInsPar1")}</p>
 
                         </div>
                     </MDBCol>

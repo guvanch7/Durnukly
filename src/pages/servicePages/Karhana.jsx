@@ -40,15 +40,7 @@ const Karhana = () => {
 
                     <MDBCol md="6">
                         <div className="pic-with-items__content--item number-view mb-4  bg-white p-3 insCard">
-                            <h2 className="mt-2 text-black fw-bolder"> {t("companyInsHeader")}</h2>
-                            <p>
-                            {t("companyInsParagraph1")}
-                            </p>
-                        </div>
-                    </MDBCol>
-
-                    <MDBCol lg={12} className='bg-white p-3 insCard'>
-                        <p className='text-center'><span className='descr text-black '> {t("companyInsSpan")}</span></p>
+                            <h2 className='text-center text-black'>  {t("companyInsSpan")}</h2>
                         <ul>
                             <li> {t("companyInsList1")}</li>
                             <li>{t("companyInsList2")}</li>
@@ -60,6 +52,11 @@ const Karhana = () => {
                             <li>{t("companyInsList8")}</li>
                             <li>{t("companyInsList9")}</li>
                         </ul> 
+                        </div>
+                    </MDBCol>
+
+                    <MDBCol lg={12} className='bg-white p-3 insCard'>
+                       
                         
 
 
@@ -79,7 +76,6 @@ const Karhana = () => {
                             <li>{t("companyInsList32")}</li>
                             <li>{t("companyInsList33")}</li>
                             <li>{t("companyInsList34")}</li>
-                            <li>{t("companyInsList35")}</li>
                         </ul>
                     </MDBCol>
 

@@ -111,7 +111,7 @@ const ServiceOy = () => {
                         <h2 className="mt-2 text-black fw-bolder text-center"><span className='descr'>{t("homeSpan1")}</span></h2>
 
                         <p>
-                            {t("dropLink5")}
+                            {t("homeParagraph3")}
                         </p>
 
                         <h2 className="mt-2 text-black fw-bolder text-center"><span className='descr'>{t("homeSpan2")}</span></h2>
