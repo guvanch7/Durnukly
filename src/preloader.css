@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.page-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.page-content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.preloader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* Используйте vw для ширины */
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* overflow: hidden; */
+  /* Отключает любые дополнительные скроллы внутри прелоадера */
+}
+
+
+.fade-out {
+  opacity: 0;
+  height: 0;
+  /* overflow: hidden; */
+}
+
+.spinner {
+  position: relative;
+  width: 400px;
+  /* Увеличен размер спиннера */
+  height: 400px;
+  /* Увеличен размер спиннера */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  /* Увеличен отступ, чтобы логотип не пересекался с кругами */
+  padding: 30px;
+  /* Увеличен отступ */
+}
+
+.logo {
+  width: 100px;
+  /* Увеличен размер логотипа */
+  height: 100px;
+  /* Увеличен размер логотипа */
+}
+
+.inner-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: #000046;
+}
+
+/* Первое кольцо */
+.circle1 {
+  width: 150px;
+  /* Увеличен размер */
+  height: 150px;
+  /* Увеличен размер */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate1 0.7s linear infinite;
+}
+
+/* Второе кольцо */
+.circle2 {
+  width: 200px;
+  /* Увеличен размер */
+  height: 200px;
+  /* Увеличен размер */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate2 0.7s linear infinite;
+}
+
+/* Третье кольцо */
+.circle3 {
+  width: 250px;
+  /* Увеличен размер */
+  height: 250px;
+  /* Увеличен размер */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate3 0.7s linear infinite;
+}
+
+/* Четвертое кольцо */
+.circle4 {
+  width: 300px;
+  /* Увеличен размер */
+  height: 300px;
+  /* Увеличен размер */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate4 0.7s linear infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-60deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(300deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(240deg);
+  }
+}
+
+@keyframes rotate4 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
