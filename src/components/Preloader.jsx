@@ -1,5 +1,5 @@
 import   { useEffect } from 'react';
-import '../Preloader.css'; // Подключаем CSS
+import '../preloader.css'; // Подключаем CSS
 import logo from '../assets/logo.png';
 
 
