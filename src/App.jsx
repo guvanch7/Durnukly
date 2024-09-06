@@ -288,7 +288,7 @@ function App() {
                     <h6 className='text-uppercase fw-bold mb-4'>{t("footerHeader3")}</h6>
                     <p>
                       <MDBIcon color='secondary' icon='home' className='me-2' />
-                      Aşgabat ş., 1971 köçe, 19
+                      {t("mapAddr")}
                     </p>
                     <p>
                       <MDBIcon color='secondary' icon='envelope' className='me-3' />
